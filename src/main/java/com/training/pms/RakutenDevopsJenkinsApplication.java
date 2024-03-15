@@ -13,9 +13,13 @@ public class RakutenDevopsJenkinsApplication {
 		SpringApplication.run(RakutenDevopsJenkinsApplication.class, args);
 	}
 	
-	@GetMapping
+	@GetMapping("india")
 	public String getMessage() {
-		return "Rakuten India welcomes you to japan!!!!";
+		return "Rakuten India welcomes you to india!!!!";
 	}
-
+	
+	@GetMapping("japan")
+	public String getMessage1() {
+		return "Rakuten japan welcomes you to japan!!!!";
+	}
 }
